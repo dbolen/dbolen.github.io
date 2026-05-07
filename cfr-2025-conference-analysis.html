@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>2025 National Conference — Theme Analysis</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Inter:wght@400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --cfr-copper: #8F3602;
+    --cfr-viridian: #03795F;
+    --cfr-sand: #F0E4D8;
+    --cfr-black: #1A1A1A;
+    --cfr-gray: #A4A4A4;
+    --cfr-dune: #D9C9B8;
+    --font-serif: "EB Garamond", Georgia, serif;
+    --font-sans: "Inter", system-ui, sans-serif;
+    --font-mono: "DM Mono", ui-monospace, monospace;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: #fff; color: var(--cfr-black); font-family: var(--font-serif); font-size: 18px; line-height: 1.7; }
+
+  header { background: var(--cfr-black); color: white; padding: 2.5rem 2rem 2rem; }
+  .header-label { font-family: var(--font-mono); font-size: 0.65rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--cfr-sand); margin-bottom: 0.75rem; }
+  header h1 { font-family: var(--font-serif); font-style: italic; font-size: clamp(1.8rem, 5vw, 2.8rem); font-weight: 400; line-height: 1.2; max-width: 680px; }
+  header p { font-family: var(--font-sans); font-size: 0.8rem; color: rgba(255,255,255,0.55); margin-top: 1rem; }
+
+  .container { max-width: 760px; margin: 0 auto; padding: 3rem 2rem; }
+  .intro { font-size: 1.1rem; line-height: 1.75; color: rgba(26,26,26,0.85); border-left: 3px solid var(--cfr-copper); padding-left: 1.25rem; margin-bottom: 2.5rem; }
+
+  .overarching-theme { background: var(--cfr-sand); padding: 1.75rem; margin-bottom: 2.5rem; border-top: 3px solid var(--cfr-copper); }
+  .ot-label { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--cfr-copper); margin-bottom: 0.5rem; }
+  .overarching-theme h2 { font-family: var(--font-serif); font-style: italic; font-size: 1.5rem; font-weight: 400; line-height: 1.3; margin-bottom: 0.75rem; }
+  .overarching-theme p { font-size: 1rem; line-height: 1.7; color: rgba(26,26,26,0.8); }
+
+  .themes-label { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.15em; text-transform: uppercase; color: var(--cfr-gray); display: flex; align-items: center; gap: 0.75rem; margin-bottom: 2rem; }
+  .themes-label::after { content: ''; flex: 1; border-top: 1px solid rgba(0,0,0,0.1); }
+
+  .theme-card { border-top: 1px solid rgba(0,0,0,0.1); padding: 2rem 0; }
+  .theme-meta { display: flex; align-items: baseline; gap: 1rem; margin-bottom: 0.5rem; }
+  .theme-number { font-family: var(--font-mono); font-size: 0.65rem; color: var(--cfr-copper); }
+  .theme-tag { font-family: var(--font-mono); font-size: 0.6rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--cfr-gray); }
+  .theme-card h3 { font-family: var(--font-serif); font-style: italic; font-size: 1.3rem; font-weight: 400; line-height: 1.3; margin-bottom: 0.75rem; }
+  .theme-card .summary { font-size: 1rem; line-height: 1.75; color: rgba(26,26,26,0.85); margin-bottom: 1.25rem; }
+
+  .quote-block { background: var(--cfr-sand); padding: 1.1rem 1.25rem; margin-bottom: 1rem; }
+  .quote-block p { font-family: var(--font-serif); font-style: italic; font-size: 1rem; line-height: 1.65; }
+  .attribution { font-family: var(--font-sans); font-size: 0.72rem; font-style: normal; color: var(--cfr-gray); margin-top: 0.5rem; display: block; }
+
+  .contrarian { border-left: 3px solid var(--cfr-viridian); padding: 0.9rem 1.1rem; margin-top: 1rem; }
+  .contrarian-label { font-family: var(--font-mono); font-size: 0.58rem; letter-spacing: 0.12em; text-transform: uppercase; color: var(--cfr-viridian); display: block; margin-bottom: 0.4rem; }
+  .contrarian p { font-size: 0.95rem; line-height: 1.65; color: rgba(26,26,26,0.8); }
+
+  footer { background: var(--cfr-sand); padding: 2rem; margin-top: 3rem; border-top: 1px solid var(--cfr-dune); }
+  footer p { font-family: var(--font-sans); font-size: 0.72rem; color: var(--cfr-gray); max-width: 760px; margin: 0 auto; line-height: 1.6; }
+  footer strong { color: var(--cfr-black); }
+
+  @media (max-width: 600px) {
+    .container { padding: 2rem 1.25rem; }
+    header { padding: 1.75rem 1.25rem 1.5rem; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-label">Council on Foreign Relations · 2025 National Conference</div>
+  <h1>Themes from the 30th Annual National Conference</h1>
+  <p>AI-assisted thematic analysis of on-the-record session transcripts · June 2025</p>
+</header>
+
+<div class="container">
+
+  <p class="intro">Five on-the-record sessions. Nearly 400 participants from 36 states and 10 countries. What did the conversations, taken together, reveal about the state of U.S. foreign policy and global order? This analysis uses AI to surface the threads of consensus — and the notable dissents — across all five panels.</p>
+
+  <div class="overarching-theme">
+    <div class="ot-label">Overarching Theme</div>
+    <p style="font-family:var(--font-sans);font-size:0.78rem;color:rgba(26,26,26,0.5);margin-bottom:1rem;padding:0.6rem 0.85rem;background:rgba(0,0,0,0.04);border-left:2px solid var(--cfr-dune);line-height:1.6;">This analysis was produced by Claude (Anthropic), which read the full on-the-record transcripts from all five sessions — roughly 292,000 characters of dialogue — and identified recurring themes, points of convergence, and notable dissents. All quotes are verbatim from uncorrected transcripts published on cfr.org.</p>
+    <h2>The Unraveling Architecture</h2>
+    <p>Across every session, speakers grappled with the same underlying reality: the rules-based international order that defined the post-Cold War decades is fracturing — in trade, alliances, technology without guardrails, and the Arctic — and no replacement architecture has emerged. The conference's dominant mood was not panic but urgent pragmatism: how do institutions, companies, and nations adapt when the structures they relied on are being dismantled without consensus?</p>
+  </div>
+
+  <div class="themes-label">Key Themes</div>
+
+  <div class="theme-card">
+    <div class="theme-meta">
+      <span class="theme-number">01</span>
+      <span class="theme-tag">Trade &amp; Alliances</span>
+    </div>
+    <h3>Uncertainty Is the Policy</h3>
+    <p class="summary">The North America panel reached a striking consensus: the specific tariff level matters less than the daily unpredictability surrounding it. Canada's chief USMCA negotiator Steve Verheul described "toxic uncertainty" choking investment and long-term planning across all three countries. Mexico's Alonso Cervera echoed the point — foreign direct investment has effectively frozen not because of any particular rule, but because no one knows what the rules will be next week. The 2026 USMCA review, designed as a routine check-in, now looms as an existential moment for North American trade architecture.</p>
+    <div class="quote-block">
+      <p>"We are in a situation now where the biggest challenge I think we're all facing is the degree of uncertainty, almost toxic uncertainty, which is affecting investment, it's affecting longer-term planning, all of that."</p>
+      <span class="attribution">— Steve Verheul, former Chief Trade Negotiator, Canada; Principal, GT and Company Executive Advisors</span>
+    </div>
+    <div class="contrarian">
+      <span class="contrarian-label">Contrarian voice</span>
+      <p>Cervera pushed back on the idea that North America is headed for a permanent split: "I also don't think that North America is dead. I think globalization has peaked. I think regionalization is going to become increasingly important." His bet — trade flows between the three countries will be larger in ten years, not smaller — was the most explicitly optimistic forecast of the conference.</p>
+    </div>
+  </div>
+
+  <div class="theme-card">
+    <div class="theme-meta">
+      <span class="theme-number">02</span>
+      <span class="theme-tag">Development</span>
+    </div>
+    <h3>Jobs Are the Only Real Anti-Poverty Program</h3>
+    <p class="summary">World Bank President Ajay Banga made the case that the development community has been measuring the wrong things for decades. Jobs — not schools, clinics, or infrastructure in isolation — are the only mechanism that simultaneously addresses poverty, dignity, and political stability. He pointed to a demographic time bomb: 1.2 billion young people entering the workforce in emerging markets over the next 15 years, against projections of only 400 million jobs. The gap, he argued, is the real origin story for illegal migration, military coups, and radicalization — and a warning that current foreign aid debates miss the point entirely. In his framing, foreign aid — when designed well — lays the regulatory and ecosystem groundwork that private-sector job creation then builds on. Remove that groundwork, he argued, and the private sector has nothing to stand on.</p>
+    <div class="quote-block">
+      <p>"If you're worried about illegal migration right now, just wait. If you're worried about military coups right now, just wait. If you're worried about drugs and people not being able to get access to being productively involved in society, just wait."</p>
+      <span class="attribution">— Ajay Banga, President, World Bank Group</span>
+    </div>
+    <div class="contrarian">
+      <span class="contrarian-label">Contrarian voice</span>
+      <p>Banga himself offered the most honest complication of his own argument: he's deeply skeptical that "big AI" will help the developing world in the near term, arguing it will initially widen the gap between rich and poor nations rather than close it — because most developing countries lack the electricity, computing infrastructure, and data sovereignty required to benefit from frontier models.</p>
+    </div>
+  </div>
+
+  <div class="theme-card">
+    <div class="theme-meta">
+      <span class="theme-number">03</span>
+      <span class="theme-tag">Tech &amp; Power</span>
+    </div>
+    <h3>A Few Companies Now Set Geopolitical Strategy</h3>
+    <p class="summary">The tech panel converged on a diagnosis that would have seemed alarmist five years ago: a handful of AI and platform companies have accumulated structural power that rivals — and in some respects exceeds — the power of many governments. Janet Haven described tech leaders "setting the agenda for society, for our geopolitical strategy." Adam Segal pointed to an unprecedented chokepoint: the U.S.-China AI competition now runs through just three companies — Nvidia, ASML, and TSMC — a concentration of leverage for economic statecraft with no historical parallel. The panel agreed no coherent governance framework, domestic or international, currently exists to address this.</p>
+    <div class="quote-block">
+      <p>"In 2022, the Defense Department published a list of fourteen critical emerging technologies. The private sector leads for eleven of those."</p>
+      <span class="attribution">— Adam Segal, Ira A. Lipman Chair in Emerging Technologies and National Security, Council on Foreign Relations</span>
+    </div>
+    <div class="contrarian">
+      <span class="contrarian-label">Contrarian voice</span>
+      <p>Renée DiResta was blunt about the limits of the governance conversation: "My personal sense is I don't believe that things are ever going to happen." Her preferred fix — proliferating protocol-based platforms to render centralized ones irrelevant — drew pushback from Chinmayi Arun, who argued it ignored the profit-driven business models that make concentration inevitable regardless of protocol architecture.</p>
+    </div>
+  </div>
+
+  <div class="theme-card">
+    <div class="theme-meta">
+      <span class="theme-number">04</span>
+      <span class="theme-tag">Great Power Competition</span>
+    </div>
+    <h3>China Is Integrating What the U.S. Is Still Debating</h3>
+    <p class="summary">Across the global order and tech panels, a recurring theme emerged: the U.S. is consumed by internal debates about AI governance, trade policy, and alliance reliability while China moves decisively on integration and positioning. Segal noted that China is less focused on winning the race to AGI and more focused on applying AI across its economy and military — a pragmatic approach that may matter more in practice than model benchmarks. In the Arctic, Marisol Maddox documented China's systematic deepening of its presence through joint coast guard operations with Russia in the Bering Sea, a Northern Sea Route working group, and dual-use "research" icebreakers operating off Alaska.</p>
+    <div class="quote-block">
+      <p>"FSB and Chinese coast guard working together off the state of Alaska in the Bering Sea. Chinese and Russian naval armadas working together, same zone of area and influence off the coast of Alaska. Four bombers flying off the coast of Alaska — two Chinese, two Russian, together."</p>
+      <span class="attribution">— Michael Sfraga, former U.S. Ambassador at Large for Arctic Affairs, U.S. Department of State</span>
+    </div>
+    <div class="contrarian">
+      <span class="contrarian-label">Contrarian voice</span>
+      <p>Emma Ashford of the Stimson Center challenged the bipartisan consensus that the U.S. must maintain its globally engaged posture at current levels: "We've been overextended in ways that haven't served U.S. interests well, and there's a case that strategic retrenchment in some areas would allow for more focused competition where it actually matters" — a position the rest of the panel did not endorse.</p>
+    </div>
+  </div>
+
+  <div class="theme-card">
+    <div class="theme-meta">
+      <span class="theme-number">05</span>
+      <span class="theme-tag">Institutions</span>
+    </div>
+    <h3>The Cooperative Frameworks We Built Are Quietly Collapsing</h3>
+    <p class="summary">The conference's most elegiac thread ran through every session: institutions painstakingly built over decades are eroding, often without anyone making an explicit decision to end them. The Arctic Council has operated in a degraded state since Russia's 2022 invasion. The USMCA's 2026 review, designed as a routine update, has become a stress test for the entire North American relationship. USAID's effective dismantlement is removing the groundwork for mineral development agreements in Greenland that U.S. companies now say they're interested in — but whose enabling conditions were quietly cut. Ajay Banga described the World Bank's own institutional dysfunction: 12-month project approvals that outlast the political will of elected governments.</p>
+    <div class="quote-block">
+      <p>"So much has been shared — cultural resources, natural resources, science. Scientists have been going back and forth for thirty years, monitoring permafrost, monitoring wildlife migrations. All of that has come to an extreme halt."</p>
+      <span class="attribution">— Margaret D. Williams, Senior Fellow, Arctic Initiative, Belfer Center for Science and International Affairs, Harvard Kennedy School</span>
+    </div>
+    <div class="contrarian">
+      <span class="contrarian-label">Contrarian voice</span>
+      <p>Marisol Maddox offered an unexpectedly optimistic read on institutional resilience in the Arctic: Norway had quietly kept the Arctic Council functional through written procedures and virtual meetings, and Denmark was equally committed to preserving it. "That was a huge, huge victory because the potential for that to have fallen apart was significant" — a reminder that some multilateral structures are proving more durable than the headlines suggest.</p>
+    </div>
+  </div>
+
+</div>
+
+<footer>
+  <p><strong>Methodology.</strong> This analysis was produced by Claude (Anthropic) using the complete on-the-record transcript text from all five 2025 CFR National Conference sessions: a conversation with World Bank President Ajay Banga; panels on the future of North America, the shifting global order, tech and politics, and the Arctic. Themes were identified by analyzing recurring arguments, points of convergence, and notable dissents across all sessions. All quotes are verbatim from the uncorrected transcripts published on cfr.org. This is a proof-of-concept prototype by CFR Digital, following the editorial approach used by Semafor for its World Economy conference. The institutions, alliances, and norms that emerged from 1945 and 1991 were not accidents — they were choices. The question the conference kept returning to, in different registers, is whether the next set of choices will be made deliberately or by default. Fonts shown use Google Fonts fallbacks (EB Garamond, Inter); production CFR pages use licensed Adobe Caslon Pro and Season Sans.</p>
+</footer>
+
+</body>
+</html>
